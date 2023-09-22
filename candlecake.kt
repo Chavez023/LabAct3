@@ -20,7 +20,7 @@ fun printCakeCandles(age: Int){
     }
     println()
     
-    print(" ") // Print the inset of the candles on the cake
+    print(" ")
     repeat(age) {
         print("|")
     }
