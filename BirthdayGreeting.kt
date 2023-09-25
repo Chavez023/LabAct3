@@ -3,7 +3,7 @@ fun main() {
     val timesToRepeat = 3
     val name = "Charles"
     val age = 21
-    val ageD = age *365
+    val ageD = age * 365
 
     
     println("Happy Birthday $name!")
