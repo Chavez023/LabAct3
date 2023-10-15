@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <style name="header">
+                <item name="android:textSize">32sp</item>
+                <item name="android:textColor">#FFFFFF</item>
+        </style>
+        <style name="descript">
+                <item name="android:textSize">14sp</item>
+                <item name="android:textColor">#FFFFFF</item>
+        </style>
+        <style name="fills">
+                <item name="android:textSize">20sp</item>
+
+        </style>
+</resources>

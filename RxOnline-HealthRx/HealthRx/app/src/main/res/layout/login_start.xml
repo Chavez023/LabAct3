@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#490201"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+
+    <TextView
+        android:id="@+id/App_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/noto_sans"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Health Rx"
+        android:textAppearance="@style/header"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/app_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/noto_sans"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="To start using the app. Please, login with your preferred account communication details below and click the &quot;login&quot; button.If you don't have an account click the &quot;register&quot; button."
+        android:textAppearance="@style/descript" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fills"
+        android:ems="10"
+        android:hint="09XX-XXX-XXXX"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textAppearance="@style/fills" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Login"
+        android:background="@drawable/but"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/but"
+        android:text="Register" />
+</LinearLayout>
