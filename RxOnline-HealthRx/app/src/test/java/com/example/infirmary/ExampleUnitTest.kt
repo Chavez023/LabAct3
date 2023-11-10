@@ -1,4 +1,4 @@
-package com.example.healthrx
+package com.example.infirmary
 
 import org.junit.Test
 
