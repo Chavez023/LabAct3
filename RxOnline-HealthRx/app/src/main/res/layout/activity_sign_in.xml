@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/body">
+    android:background="@drawable/cover">
 
     <LinearLayout
         android:id="@+id/Main"
@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
-        android:padding="40dp">
+        android:padding="20dp">
 
         <LinearLayout
             android:id="@+id/Form"
@@ -25,11 +25,7 @@
 
             <TextView
                 android:id="@+id/Current"
-                style="@style/isetheadtextcenter"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-
+                style="@style/iset_head_text_center"
                 android:text="Sign In" />
 
             <Space
@@ -71,7 +67,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#8F0E0E"
-                android:text="Sign Up" />
+                android:text="Login" />
 
             <Space
                 android:layout_width="match_parent"

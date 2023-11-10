@@ -3,7 +3,6 @@
     android:id="@+id/Body"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:gravity="center"
     android:orientation="vertical">
 
@@ -25,13 +24,11 @@
             android:padding="20dp">
 
             <TextView
-                android:id="@+id/Current"
-                style="@style/isetheadtextcenter"
+                android:id="@+id/current"
+                style="@style/iset_head_text_center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/noto_sans"
-
-                android:text="Sign In" />
+                android:text="Sign Up" />
 
             <Space
                 android:layout_width="match_parent"
@@ -97,8 +94,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#8F0E0E"
-                android:text="Sign In" />
+                android:text="SigIn" />
         </LinearLayout>
+
     </LinearLayout>
 
 </LinearLayout>

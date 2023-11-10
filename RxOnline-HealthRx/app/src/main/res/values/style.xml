@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="isetheadarea" parent="TextAppearance.AppCompat">
+    <style name="iset_header" parent="TextAppearance.AppCompat">
         <item name="android:paddingTop">40dp</item>
         <item name="android:paddingLeft">20dp</item>
         <item name="android:paddingRight">20dp</item>
@@ -11,33 +11,25 @@
         <item name="android:orientation">horizontal</item>
     </style>
 
-    <style name="isetheadsidetexts_single" parent="TextAppearance.AppCompat">
+    <style name="iset_header_texts_left" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/noto_sans</item>
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/forhead</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:gravity">center_horizontal|center_vertical</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
 
     </style>
 
-    <style name="isetheadtextcenter" parent="TextAppearance.AppCompat">
+    <style name="iset_head_text_center" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/noto_sans</item>
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/forhead</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:gravity">center_horizontal</item>
+
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
     </style>
-
-    <style name="isetform" parent="TextAppearance.AppCompat">
-        <item name="cornerRadius">20dp</item>
-        <item name="android:backgroundTint">@color/white</item>
-    </style>
-
-
-
-
-
 
 </resources>
