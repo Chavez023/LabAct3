@@ -32,4 +32,6 @@
         <item name="android:gravity">center_horizontal|center_vertical</item>
     </style>
 
+    <style name="aaa" parent="Theme.MaterialComponents"></style>
+
 </resources>

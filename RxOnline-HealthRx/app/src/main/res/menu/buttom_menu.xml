@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/iDash"
+        android:title="Dashboard"
+        android:icon="@drawable/ico_dashboard"/>
+    <item
+        android:id="@+id/iMess"
+        android:title="Messages"
+        android:icon="@drawable/ico_mess"/>
+    <item
+        android:id="@+id/iReq"
+        android:title="Requests"
+        android:icon="@drawable/ico_box"/>
+    <item
+        android:id="@+id/iNoti"
+        android:title="Notifications"
+        android:icon="@drawable/ico_bell"/>
+
+
+
+</menu>

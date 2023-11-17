@@ -23,22 +23,21 @@ class SignIn : AppCompatActivity() {
             val email = binding.Email.text.toString()
             val pass = binding.Password.text.toString()
 
-
             if (email.isNotEmpty() && pass.isNotEmpty()){
-
                 firebaseAuth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful) {
-                        val intent = Intent(this, Dashboard::class.java)
+                        val intent = Intent(this, MainSec::class.java)
                         startActivity(intent)
+                        finish()
                     } else {
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, it.exception?.message, Toast.LENGTH_SHORT).show()
                     }
                 }
             } else {
-                Toast.makeText(this, "Field Cannot be Empty", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Fields cannot be empty", Toast.LENGTH_SHORT).show()
             }
-
         }
+
         binding.SignInButton.setOnClickListener {
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
