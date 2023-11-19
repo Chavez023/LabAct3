@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="iset_header" parent="TextAppearance.AppCompat">
+    <!--Using Relative Layout-->
+    <style name="rel.Top_part" parent="TextAppearance.AppCompat">
         <item name="android:paddingTop">40dp</item>
         <item name="android:paddingLeft">20dp</item>
         <item name="android:paddingRight">20dp</item>
@@ -10,28 +11,141 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
     </style>
+    <style name="rel.Mid_part" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_below">@id/Header</item>
+        <item name="android:layout_above">@+id/bottom_navigation</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">20dp</item>
+    </style>
+    <style name="rel.Bot.Nav_part" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="rel.Top.Status_part" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/Header</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
 
-    <style name="iset_header_texts_left" parent="TextAppearance.AppCompat">
+    <!--Text-->
+    <style name="Header.Left_text" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/noto_sans</item>
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/forhead</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
-
     </style>
-
-    <style name="iset_head_text_center" parent="TextAppearance.AppCompat">
+    <style name="Header.Center_text" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/noto_sans</item>
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/forhead</item>
         <item name="android:textStyle">bold</item>
-
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
     </style>
+    <style name="Description.Center_text" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#BBBBBB</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+    <style name="label_text" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/noto_sans</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
 
-    <style name="aaa" parent="Theme.MaterialComponents"></style>
+    <!--Fields-->
+    <style name="Input.norm_field" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@drawable/o_unibox</item>
+        <item name="android:textColorHint">#BBBBBB</item>
+        <item name="android:textColor">#720000</item>
+        <item name="android:ems">10</item>
+    </style>
+    <style name="Input.maxwidth_field" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@drawable/o_unibox</item>
+        <item name="android:textColorHint">#BBBBBB</item>
+        <item name="android:textColor">#720000</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <!--Form-->
+    <style name="Card.form" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@drawable/o_unibox</item>
+
+    </style>
+
+
+
+    <!--Nav-->
+
+    <style name="iset_Nav_items_H" parent="TextAppearance.AppCompat">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+    <!--Items-->
+    <style name="Horizontal_item" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="Vertical_item" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <!--Button-->
+    <style name="But.norm.button" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#720000</item>
+        <item name="android:radius">0dp</item>
+
+    </style>
+
+
+
+
 
 </resources>

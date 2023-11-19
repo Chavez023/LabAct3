@@ -7,11 +7,11 @@
 
     <LinearLayout
         android:id="@+id/head"
-        style="@style/iset_header">
+        style="@style/rel.Top_part">
 
         <TextView
             android:id="@+id/Header"
-            style="@style/iset_header_texts_left"
+            style="@style/Header.Center_text"
             android:text="Requests"/>
     </LinearLayout>
 

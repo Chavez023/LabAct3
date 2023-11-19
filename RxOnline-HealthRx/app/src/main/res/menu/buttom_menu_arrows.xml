@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/back"
+        android:title="iBack"
+        android:icon="@drawable/ico_arrow_left" />
+
+    <item
+        android:id="@+id/iNext"
+        android:title="Next"
+        android:icon="@drawable/ico_arrow_right" />
+
+</menu>

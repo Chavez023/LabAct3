@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".">
+    android:layout_height="match_parent">
 
     <LinearLayout
-       android:id="@+id/head"
-        style="@style/iset_header">
+        android:id="@+id/Header"
+        style="@style/rel.Top_part">
 
         <TextView
-            android:id="@+id/Header"
-            style="@style/iset_header_texts_left"
-            android:text="Hello"/>
+            style="@style/Header.Left_text"
+            android:text="Hello" />
+
     </LinearLayout>
 
-</FrameLayout>
+
+
+        <LinearLayout
+            style="@style/rel.Mid_part">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/But.norm.button"
+                android:text="Test.Feature 1" />
+        </LinearLayout>
+
+</RelativeLayout>
 

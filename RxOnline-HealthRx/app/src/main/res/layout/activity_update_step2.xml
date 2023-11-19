@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Header"
+        style="@style/rel.Top_part">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Header.Center_text"
+            android:text="Update" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Status"
+        style="@style/rel.Top.Status_part">
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/Main"
+        android:layout_below="@id/Status"
+        style="@style/rel.Mid_part">
+
+        <LinearLayout
+            android:id="@+id/Form"
+            style="@style/Card.form">
+
+            <TextView
+                android:id="@+id/Form_Header"
+                style="@style/Header.Center_text"
+                android:text="Taken From"/>
+            <TextView
+                android:id="@+id/asa"
+                style="@style/Description.Center_text"
+                android:text="Fill-up the corresponding items"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                style="@style/Vertical_item">
+                <TextView
+                    style="@style/label_text"
+                    android:text="Hospital Name" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <EditText
+                    android:id="@+id/HospitalName"
+                    style="@style/Input.maxwidth_field"
+                    android:inputType="text"
+                    android:hint="Hospital Name" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                style="@style/Vertical_item">
+                <TextView
+                    style="@style/label_text"
+                    android:text="References Number" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <EditText
+                    android:id="@+id/RefNumber"
+                    style="@style/Input.maxwidth_field"
+                    android:hint="AZX23-23ASD"
+                    android:inputType="text" />
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <ImageView
+                android:id="@+id/uploadedImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/o_unibox"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/selectImageButton"
+                style="@style/But.norm.button"
+                android:text="Select Image"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        style="@style/rel.Bot.Nav_part">
+
+        <LinearLayout
+            android:id="@+id/Backpage"
+            style="@style/iset_Nav_items_H">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ico_arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Back" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/Nextpage"
+            style="@style/iset_Nav_items_H">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ico_arrow_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

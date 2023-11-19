@@ -15,6 +15,15 @@
         android:theme="@style/Theme.Infirmary"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateStep3"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateStep2"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateStep1"
+            android:exported="false" />
+        <activity
             android:name=".MainSec"
             android:exported="false" />
         <activity

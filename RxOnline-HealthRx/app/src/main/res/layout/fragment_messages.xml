@@ -8,11 +8,11 @@
 
     <LinearLayout
         android:id="@+id/head"
-        style="@style/iset_header">
+        style="@style/rel.Top_part">
 
         <TextView
             android:id="@+id/Header"
-            style="@style/iset_header_texts_left"
+            style="@style/Header.Left_text"
             android:text="Messages"/>
     </LinearLayout>
 

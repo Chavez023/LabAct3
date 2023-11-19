@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Header"
+        style="@style/rel.Top_part">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Header.Center_text"
+            android:text="Update" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Status"
+        style="@style/rel.Top.Status_part">
+
+        <TextView
+            android:id="@+id/some_id"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="1"/>
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="55dp"
+            android:layout_height="2dp"
+            android:background="#BBBBBB" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/Main"
+        android:layout_below="@id/Status"
+        style="@style/rel.Mid_part">
+
+        <LinearLayout
+            android:id="@+id/Form"
+            style="@style/Card.form">
+
+            <TextView
+                android:id="@+id/Form_Header"
+                style="@style/Header.Center_text"
+                android:text="Lab Result" />
+
+            <TextView
+                style="@style/Description.Center_text"
+                android:text="Fill-up the corresponding items" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout style="@style/Horizontal_item">
+
+                <EditText
+                    android:id="@+id/result_CompleteBloodCount"
+                    style="@style/Input.norm_field"
+                    android:hint="Result"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck"/>
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/label_text"
+                    android:text="Complete Blood Count" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout style="@style/Horizontal_item">
+
+                <EditText
+                    android:id="@+id/result_Urinalysis"
+                    style="@style/Input.norm_field"
+                    android:hint="Result"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/label_text"
+                    android:text="Urinalysis" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout style="@style/Horizontal_item">
+
+                <EditText
+                    android:id="@+id/result_ChestPA"
+                    style="@style/Input.norm_field"
+                    android:hint="Result"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/label_text"
+                    android:text="Chest PA" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout style="@style/Horizontal_item">
+
+                <EditText
+                    android:id="@+id/result_FastingBloodSugar"
+                    style="@style/Input.norm_field"
+                    android:hint="Result"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/label_text"
+                    android:text="Fasting Blood Sugar" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout style="@style/Horizontal_item">
+
+                <EditText
+                    android:id="@+id/result_BloodUricAcid"
+                    style="@style/Input.norm_field"
+                    android:hint="Result"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/label_text"
+                    android:text="Blood Uric Acid" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout style="@style/Horizontal_item">
+
+                <EditText
+                    android:id="@+id/result_LipidProfile"
+                    style="@style/Input.norm_field"
+                    android:hint="Result"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/label_text"
+                    android:text="Lipid Profile" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout style="@style/Horizontal_item">
+
+                <EditText
+                    android:id="@+id/result_Creatinine"
+                    style="@style/Input.norm_field"
+                    android:hint="Result"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/label_text"
+                    android:text="Creatinine" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout style="@style/Horizontal_item">
+
+                <EditText
+                    android:id="@+id/result_SGPT"
+                    style="@style/Input.norm_field"
+                    android:hint="Result"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/label_text"
+                    android:text="SGPT" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout style="@style/Horizontal_item">
+
+                <EditText
+                    android:id="@+id/result_SGOT"
+                    style="@style/Input.norm_field"
+                    android:hint="Result"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/label_text"
+                    android:text="SGOT" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout style="@style/Horizontal_item">
+
+                <EditText
+                    android:id="@+id/result_Other"
+                    style="@style/Input.norm_field"
+                    android:hint="Result"
+                    android:inputType="numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    style="@style/label_text"
+                    android:text="Other" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        style="@style/rel.Bot.Nav_part">
+
+        <LinearLayout
+            android:id="@+id/Backpage"
+            style="@style/iset_Nav_items_H">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ico_arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Back" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/Nextpage"
+            style="@style/iset_Nav_items_H">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Next" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ico_arrow_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

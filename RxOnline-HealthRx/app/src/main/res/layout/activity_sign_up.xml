@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/Body"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/Main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="40dp">
+        style="@style/rel.Mid_part"
+        android:gravity="center_vertical">
+
 
         <LinearLayout
             android:id="@+id/Form"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:backgroundTint="#FFFFFF"
-            android:orientation="vertical"
-            android:padding="20dp">
+            style="@style/Card.form">
 
             <TextView
                 android:id="@+id/current"
-                style="@style/iset_head_text_center"
+                style="@style/Header.Center_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Sign Up" />
@@ -36,14 +28,11 @@
 
             <EditText
                 android:id="@+id/Email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/fill"
+                style="@style/Input.maxwidth_field"
                 android:ems="10"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
-                android:minHeight="48dp"
-                android:padding="8dp"/>
+                 />
 
             <Space
                 android:layout_width="match_parent"
@@ -51,38 +40,29 @@
 
             <EditText
                 android:id="@+id/Password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/fill"
-                android:ems="10"
+                style="@style/Input.maxwidth_field"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:minHeight="48dp"
-                android:padding="8dp" />
+                 />
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
             <EditText
                 android:id="@+id/PassCon"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/fill"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:minHeight="48dp"
-                android:padding="8dp" />
+                style="@style/Input.maxwidth_field"
+                android:hint="Retype-Password"
+                android:inputType="textPassword" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 
             <Button
+                android:layout_gravity="center"
                 android:id="@+id/SignUpButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#8F0E0E"
+                style="@style/But.norm.button"
                 android:text="Sign Up" />
 
             <Space
@@ -91,12 +71,14 @@
 
             <Button
                 android:id="@+id/SignInButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#8F0E0E"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#720000"
+                style="@style/But.norm.button"
+                android:layout_gravity="center"
                 android:text="SigIn" />
         </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
+

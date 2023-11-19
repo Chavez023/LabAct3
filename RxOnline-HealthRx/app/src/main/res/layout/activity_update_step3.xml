@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Header"
+        style="@style/rel.Top_part">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/Header.Center_text"
+            android:text="Update" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Status"
+        style="@style/rel.Top.Status_part">
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/Main"
+        android:layout_below="@id/Status"
+        style="@style/rel.Mid_part">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Form1"
+                style="@style/Card.form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Form_Header1"
+                    style="@style/Header.Center_text"
+                    android:text="Lab Result" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout style="@style/Horizontal_item">
+
+                    <TextView
+                        android:id="@+id/result_CompleteBloodCount"
+                        style="@style/Input.norm_field"
+                        android:gravity="start|center"
+                        android:hint="Result" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Complete Blood Count" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout style="@style/Horizontal_item">
+
+                    <TextView
+                        android:id="@+id/result_Urinalysis"
+                        style="@style/Input.norm_field"
+                        android:gravity="start|center"
+                        android:hint="Result" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Urinalysis" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout style="@style/Horizontal_item">
+
+                    <TextView
+                        android:id="@+id/result_ChestPA"
+                        style="@style/Input.norm_field"
+                        android:gravity="start|center"
+                        android:hint="Result" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Chest PA" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout style="@style/Horizontal_item">
+
+                    <TextView
+                        android:id="@+id/result_FastingBloodSugar"
+                        style="@style/Input.norm_field"
+                        android:gravity="start|center"
+                        android:hint="Result" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Fasting Blood Sugar" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout style="@style/Horizontal_item">
+
+                    <TextView
+                        android:id="@+id/result_BloodUricAcid"
+                        style="@style/Input.norm_field"
+                        android:gravity="start|center"
+                        android:hint="Result" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Blood Uric Acid" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout style="@style/Horizontal_item">
+
+                    <TextView
+                        android:id="@+id/result_LipidProfile"
+                        style="@style/Input.norm_field"
+                        android:gravity="start|center"
+                        android:hint="Result" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Lipid Profile" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout style="@style/Horizontal_item">
+
+                    <TextView
+                        android:id="@+id/result_Creatinine"
+                        style="@style/Input.norm_field"
+                        android:gravity="start|center"
+                        android:hint="Result" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Creatinine" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout style="@style/Horizontal_item">
+
+                    <TextView
+                        android:id="@+id/result_SGPT"
+                        style="@style/Input.norm_field"
+                        android:gravity="start|center"
+                        android:hint="Result" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="SGPT" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout style="@style/Horizontal_item">
+
+                    <TextView
+                        android:id="@+id/result_SGOT"
+                        style="@style/Input.norm_field"
+                        android:gravity="start|center"
+                        android:hint="Result" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="SGOT" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout style="@style/Horizontal_item">
+
+                    <TextView
+                        android:id="@+id/result_Other"
+                        style="@style/Input.norm_field"
+                        android:gravity="start|center"
+                        android:hint="Result" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Other" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/Form2"
+                style="@style/Card.form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Form_Header"
+                    style="@style/Header.Center_text"
+                    android:text="Taken From" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout style="@style/Vertical_item">
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Hospital Name" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:id="@+id/HospitalName"
+                        style="@style/Input.maxwidth_field"
+                        android:gravity="start|center"
+                        android:hint="Hospital Name" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout style="@style/Vertical_item">
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="References Number" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <TextView
+                        android:id="@+id/RefNumber"
+                        style="@style/Input.maxwidth_field"
+                        android:gravity="start|center"
+                        android:hint="AZX23-23ASD" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/uploadedImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/o_unibox"
+                    android:src="@drawable/ic_launcher_foreground" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:id="@+id/Special"
+                style="@style/Card.form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/Submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        style="@style/rel.Bot.Nav_part">
+
+        <LinearLayout
+            android:id="@+id/Backpage"
+            style="@style/iset_Nav_items_H">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ico_arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Back" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

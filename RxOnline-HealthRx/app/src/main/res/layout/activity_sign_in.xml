@@ -9,23 +9,17 @@
 
     <LinearLayout
         android:id="@+id/Main"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="20dp">
+        style="@style/rel.Mid_part"
+        android:gravity="center">
 
         <LinearLayout
             android:id="@+id/Form"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/form"
-            android:orientation="vertical"
-            android:padding="20dp">
+            style="@style/Card.form"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/Current"
-                style="@style/iset_head_text_center"
+                style="@style/Header.Center_text"
                 android:text="Sign In" />
 
             <Space
@@ -34,14 +28,9 @@
 
             <EditText
                 android:id="@+id/Email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/fill"
-                android:ems="10"
+                style="@style/Input.maxwidth_field"
                 android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:minHeight="48dp"
-                android:padding="8dp" />
+                android:inputType="textEmailAddress" />
 
             <Space
                 android:layout_width="match_parent"
@@ -49,14 +38,9 @@
 
             <EditText
                 android:id="@+id/Password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/fill"
-                android:ems="10"
+                style="@style/Input.maxwidth_field"
                 android:hint="Password"
-                android:inputType="textPassword"
-                android:minHeight="48dp"
-                android:padding="8dp" />
+                android:inputType="textPassword" />
 
             <Space
                 android:layout_width="match_parent"
@@ -64,9 +48,7 @@
 
             <Button
                 android:id="@+id/LoginButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#8F0E0E"
+                style="@style/But.norm.button"
                 android:text="Login" />
 
             <Space
@@ -75,9 +57,9 @@
 
             <Button
                 android:id="@+id/SignInButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#8F0E0E"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#720000"
+                style="@style/But.norm.button"
                 android:text="Sign In" />
         </LinearLayout>
     </LinearLayout>
