@@ -32,28 +32,35 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Header.Center_text"
+                android:text="Confirmation" />
+
+            <TextView
+                style="@style/Description.Center_text"
+                android:text="Tripple check your Information before submitting"/>
+
+
+        </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/Form1"
-                style="@style/Card.form"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                style="@style/form_Multi.con">
 
                 <TextView
-                    android:id="@+id/Form_Header1"
                     style="@style/Header.Center_text"
                     android:text="Lab Result" />
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp" />
-
-                <LinearLayout style="@style/Horizontal_item">
+                <LinearLayout style="@style/item_Horizontal.con">
 
                     <TextView
                         android:id="@+id/result_CompleteBloodCount"
-                        style="@style/Input.norm_field"
-                        android:gravity="start|center"
-                        android:hint="Result" />
+                        style="@style/Input.norm_field" />
 
                     <Space
                         android:layout_width="20dp"
@@ -64,17 +71,11 @@
                         android:text="Complete Blood Count" />
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout style="@style/Horizontal_item">
+                <LinearLayout style="@style/item_Horizontal.con">
 
                     <TextView
                         android:id="@+id/result_Urinalysis"
-                        style="@style/Input.norm_field"
-                        android:gravity="start|center"
-                        android:hint="Result" />
+                        style="@style/Input.norm_field" />
 
                     <Space
                         android:layout_width="20dp"
@@ -85,17 +86,11 @@
                         android:text="Urinalysis" />
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout style="@style/Horizontal_item">
+                <LinearLayout style="@style/item_Horizontal.con">
 
                     <TextView
                         android:id="@+id/result_ChestPA"
-                        style="@style/Input.norm_field"
-                        android:gravity="start|center"
-                        android:hint="Result" />
+                        style="@style/Input.norm_field" />
 
                     <Space
                         android:layout_width="20dp"
@@ -106,17 +101,11 @@
                         android:text="Chest PA" />
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout style="@style/Horizontal_item">
+                <LinearLayout style="@style/item_Horizontal.con">
 
                     <TextView
                         android:id="@+id/result_FastingBloodSugar"
-                        style="@style/Input.norm_field"
-                        android:gravity="start|center"
-                        android:hint="Result" />
+                        style="@style/Input.norm_field" />
 
                     <Space
                         android:layout_width="20dp"
@@ -127,17 +116,11 @@
                         android:text="Fasting Blood Sugar" />
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout style="@style/Horizontal_item">
+                <LinearLayout style="@style/item_Horizontal.con">
 
                     <TextView
                         android:id="@+id/result_BloodUricAcid"
-                        style="@style/Input.norm_field"
-                        android:gravity="start|center"
-                        android:hint="Result" />
+                        style="@style/Input.norm_field" />
 
                     <Space
                         android:layout_width="20dp"
@@ -148,17 +131,11 @@
                         android:text="Blood Uric Acid" />
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout style="@style/Horizontal_item">
+                <LinearLayout style="@style/item_Horizontal.con">
 
                     <TextView
                         android:id="@+id/result_LipidProfile"
-                        style="@style/Input.norm_field"
-                        android:gravity="start|center"
-                        android:hint="Result" />
+                        style="@style/Input.norm_field" />
 
                     <Space
                         android:layout_width="20dp"
@@ -169,17 +146,11 @@
                         android:text="Lipid Profile" />
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout style="@style/Horizontal_item">
+                <LinearLayout style="@style/item_Horizontal.con">
 
                     <TextView
                         android:id="@+id/result_Creatinine"
-                        style="@style/Input.norm_field"
-                        android:gravity="start|center"
-                        android:hint="Result" />
+                        style="@style/Input.norm_field" />
 
                     <Space
                         android:layout_width="20dp"
@@ -190,17 +161,11 @@
                         android:text="Creatinine" />
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout style="@style/Horizontal_item">
+                <LinearLayout style="@style/item_Horizontal.con">
 
                     <TextView
                         android:id="@+id/result_SGPT"
-                        style="@style/Input.norm_field"
-                        android:gravity="start|center"
-                        android:hint="Result" />
+                        style="@style/Input.norm_field" />
 
                     <Space
                         android:layout_width="20dp"
@@ -211,17 +176,11 @@
                         android:text="SGPT" />
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout style="@style/Horizontal_item">
+                <LinearLayout style="@style/item_Horizontal.con">
 
                     <TextView
                         android:id="@+id/result_SGOT"
-                        style="@style/Input.norm_field"
-                        android:gravity="start|center"
-                        android:hint="Result" />
+                        style="@style/Input.norm_field" />
 
                     <Space
                         android:layout_width="20dp"
@@ -232,17 +191,11 @@
                         android:text="SGOT" />
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout style="@style/Horizontal_item">
+                <LinearLayout style="@style/item_Horizontal.con">
 
                     <TextView
                         android:id="@+id/result_Other"
-                        style="@style/Input.norm_field"
-                        android:gravity="start|center"
-                        android:hint="Result" />
+                        style="@style/Input.norm_field" />
 
                     <Space
                         android:layout_width="20dp"
@@ -260,34 +213,23 @@
 
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
             <LinearLayout
                 android:id="@+id/Form2"
-                style="@style/Card.form"
+                style="@style/form_Multi.con"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/Form_Header"
+                    android:id="@+id/Form_Header3"
                     style="@style/Header.Center_text"
                     android:text="Taken From" />
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="20dp" />
 
-                <LinearLayout style="@style/Vertical_item">
+                <LinearLayout style="@style/item_Vertical.con">
 
                     <TextView
                         style="@style/label_text"
                         android:text="Hospital Name" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="10dp" />
 
                     <TextView
                         android:id="@+id/HospitalName"
@@ -297,11 +239,7 @@
 
                 </LinearLayout>
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp" />
-
-                <LinearLayout style="@style/Vertical_item">
+                <LinearLayout style="@style/item_Vertical.con">
 
                     <TextView
                         style="@style/label_text"
@@ -329,13 +267,9 @@
 
             </LinearLayout>
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
             <LinearLayout
                 android:id="@+id/Special"
-                style="@style/Card.form"
+                style="@style/form_Single.con"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 

@@ -1,4 +1,4 @@
-package com.example.infirmary.Fragments
+package com.example.infirmary.sections
 
 import android.os.Bundle
 import android.view.LayoutInflater

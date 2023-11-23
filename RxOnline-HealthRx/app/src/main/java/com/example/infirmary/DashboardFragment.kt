@@ -5,8 +5,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
+import com.example.infirmary.features.update.UpdateStep1
 
 class DashboardFragment : Fragment() {
 
@@ -18,7 +19,7 @@ class DashboardFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_dashboard, container, false)
 
         // Find the button by its ID
-        val buttonNavigate = view.findViewById<Button>(R.id.button)
+        val buttonNavigate = view.findViewById<LinearLayout>(R.id.icon_upload)
 
         // Set a click listener for the button
         buttonNavigate.setOnClickListener {

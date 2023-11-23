@@ -1,10 +1,11 @@
-package com.example.infirmary
+package com.example.infirmary.features.update
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.LinearLayout
+import com.example.infirmary.R
 
 class UpdateStep1 : AppCompatActivity() {
 
@@ -21,7 +22,7 @@ class UpdateStep1 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_update_step1)
+        setContentView(R.layout.feature_update_step1)
 
         resultCompleteBloodCount = findViewById(R.id.result_CompleteBloodCount)
         resultUrinalysis = findViewById(R.id.result_Urinalysis)

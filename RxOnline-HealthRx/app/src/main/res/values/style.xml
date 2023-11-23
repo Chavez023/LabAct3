@@ -63,6 +63,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
     <style name="label_text" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/noto_sans</item>
@@ -71,6 +72,21 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="step_true.text" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/o_status_steps_true</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="step_false.text" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/o_status_steps_false</item>
+        <item name="android:textColor">#FFFFFF</item>
     </style>
 
     <!--Fields-->
@@ -98,17 +114,15 @@
         <item name="android:textColor">#720000</item>
         <item name="android:minHeight">48dp</item>
         <item name="android:ems">10</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="radio_button.field" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
     </style>
 
     <!--Form-->
-    <style name="Card.form" parent="TextAppearance.AppCompat">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:orientation">vertical</item>
-        <item name="android:padding">20dp</item>
-        <item name="android:background">@drawable/o_unibox</item>
 
-    </style>
 
 
 
@@ -122,16 +136,7 @@
 
     </style>
     <!--Items-->
-    <style name="Horizontal_item" parent="TextAppearance.AppCompat">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:orientation">horizontal</item>
-    </style>
-    <style name="Vertical_item" parent="TextAppearance.AppCompat">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:orientation">vertical</item>
-    </style>
+
 
 
     <!--Button-->
@@ -145,6 +150,70 @@
     </style>
 
 
+    <style name="quick.Tools_dash.widg" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="background">@drawable/o_unibox</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+<!--container-->
+    <style name="icon.con" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="icon_text.con" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="item_Horizontal.con" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="item_Vertical.con" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="radio_group_Vertical.con" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="radio_group_Horizontal.con" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="sv.holder_Vertical.con" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="form_Single.con" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@drawable/o_unibox</item>
+    </style>
+    <style name="form_Multi.con" parent="TextAppearance.AppCompat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@drawable/o_unibox</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
 
 
 

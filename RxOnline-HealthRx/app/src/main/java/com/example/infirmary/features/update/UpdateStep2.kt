@@ -1,4 +1,4 @@
-package com.example.infirmary
+package com.example.infirmary.features.update
 
 import android.app.Activity
 import android.content.Intent
@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.example.infirmary.R
 
 class UpdateStep2 : AppCompatActivity() {
 
@@ -23,7 +24,7 @@ class UpdateStep2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_update_step2)
+        setContentView(R.layout.feature_update_step2)
 
         hospitalNameEditText = findViewById(R.id.HospitalName)
         refNumberEditText = findViewById(R.id.RefNumber)

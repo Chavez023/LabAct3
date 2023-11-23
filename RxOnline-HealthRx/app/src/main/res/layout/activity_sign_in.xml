@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/Body"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/cover"
     android:gravity="center"
-    android:orientation="vertical"
-    android:background="@drawable/cover">
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/Main"
@@ -14,7 +15,7 @@
 
         <LinearLayout
             android:id="@+id/Form"
-            style="@style/Card.form"
+            style="@style/form_Single.con"
             android:gravity="center">
 
             <TextView
@@ -61,7 +62,7 @@
                 android:textColor="#720000"
                 style="@style/But.norm.button"
                 android:text="Sign In" />
+
         </LinearLayout>
     </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>

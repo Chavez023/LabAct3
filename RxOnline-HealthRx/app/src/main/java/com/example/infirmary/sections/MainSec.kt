@@ -1,11 +1,12 @@
-package com.example.infirmary
+package com.example.infirmary.sections
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.infirmary.Fragments.MessagesFragment
+import com.example.infirmary.DashboardFragment
 import com.example.infirmary.Fragments.NotificationsFragment
 import com.example.infirmary.Fragments.RequestsFragment
+import com.example.infirmary.R
 import com.example.infirmary.databinding.ActivityMainSecBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
