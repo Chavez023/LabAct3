@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.infirmary.databinding.ActivitySignUpBinding
+import com.example.infirmary.sections.MainSec
 import com.google.firebase.auth.FirebaseAuth
 
 class Logs : AppCompatActivity() {
@@ -29,7 +30,7 @@ class Logs : AppCompatActivity() {
 
                     firebaseAuth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener {
                         if (it.isSuccessful) {
-                            val intent = Intent(this, SignIn::class.java)
+                            val intent = Intent(this, MainSec::class.java)
                             startActivity(intent)
                         } else {
                             Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
@@ -43,7 +44,7 @@ class Logs : AppCompatActivity() {
             }
         }
         binding.SignInButton.setOnClickListener {
-            val intent = Intent (this, SignIn::class.java)
+            val intent = Intent (this, MainSec::class.java)
             startActivity(intent)
         }
 

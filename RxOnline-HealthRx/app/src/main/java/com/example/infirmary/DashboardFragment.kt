@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
+import com.example.infirmary.features.firstaid.ActMain
 import com.example.infirmary.features.update.UpdateStep1
 
 class DashboardFragment : Fragment() {
@@ -20,11 +21,18 @@ class DashboardFragment : Fragment() {
 
         // Find the button by its ID
         val buttonNavigate = view.findViewById<LinearLayout>(R.id.icon_upload)
+        val buttonNavigate1 = view.findViewById<LinearLayout>(R.id.icon_firstaid)
 
         // Set a click listener for the button
         buttonNavigate.setOnClickListener {
             // Handle button click, navigate to UpdateStep1 activity
             val intent = Intent(activity, UpdateStep1::class.java)
+            startActivity(intent)
+        }
+
+        buttonNavigate1.setOnClickListener {
+            // Handle button click, navigate to UpdateStep1 activity
+            val intent = Intent(activity, ActMain::class.java)
             startActivity(intent)
         }
 

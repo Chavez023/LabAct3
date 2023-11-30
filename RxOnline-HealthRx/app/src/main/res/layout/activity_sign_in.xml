@@ -28,10 +28,10 @@
                 android:layout_height="40dp" />
 
             <EditText
-                android:id="@+id/Email"
+                android:id="@+id/EmPhoID"
                 style="@style/Input.maxwidth_field"
-                android:hint="Email"
-                android:inputType="textEmailAddress" />
+                android:hint="Email / Phone / ID number"
+                android:inputType="text" />
 
             <Space
                 android:layout_width="match_parent"
@@ -57,11 +57,11 @@
                 android:layout_height="40dp" />
 
             <Button
-                android:id="@+id/SignInButton"
+                android:id="@+id/SignUpButton"
                 android:backgroundTint="#FFFFFF"
                 android:textColor="#720000"
                 style="@style/But.norm.button"
-                android:text="Sign In" />
+                android:text="Signup" />
 
         </LinearLayout>
     </LinearLayout>

@@ -14,26 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Infirmary"
         tools:targetApi="31">
+
         <activity
-            android:name="com.example.signup.Signup_Confirmation"
+            android:name=".signup.ConfirmationAct"
             android:exported="false" />
         <activity
-            android:name="com.example.signup.BgHistory"
+            android:name=".signup.BgHistAct"
             android:exported="false" />
         <activity
-            android:name="com.example.signup.BasicInfo"
+            android:name=".signup.BasicInfoAct"
             android:exported="false" />
         <activity
-            android:name="com.example.signup.LoginInfo"
+            android:name=".signup.LoginInfoAct"
             android:exported="false" />
         <activity
-            android:name="com.example.signup.Agreement"
+            android:name=".signup.AgreeAct"
             android:exported="false" />
+
         <activity
-            android:name=".Message_Content"
-            android:exported="false" />
-        <activity
-            android:name=".features.firstaid.FirstAidStep1"
+            android:name=".features.firstaid.ActMain"
             android:exported="false" />
         <activity
             android:name=".features.update.UpdateStep3"

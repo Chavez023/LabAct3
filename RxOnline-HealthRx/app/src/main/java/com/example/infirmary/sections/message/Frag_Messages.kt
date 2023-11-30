@@ -1,4 +1,4 @@
-package com.example.infirmary.sections
+package com.example.infirmary.sections.message
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,13 +8,13 @@ import androidx.fragment.app.Fragment
 import com.example.infirmary.DashboardFragment
 import com.example.infirmary.R
 
-class MessagesFragment : Fragment() {
+class Frag_Messages : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_messages, container, false)
+        return inflater.inflate(R.layout.sec_frag_messages, container, false)
     }
 
     companion object {

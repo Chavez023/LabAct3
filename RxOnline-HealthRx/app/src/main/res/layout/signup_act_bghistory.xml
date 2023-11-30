@@ -11,7 +11,7 @@
         style="@style/rel.Top_part">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/HeaderText"
             style="@style/Header.Center_text"
             android:text="Sign In" />
 
@@ -97,9 +97,10 @@
 
 
             </LinearLayout>
+
             <LinearLayout
-                android:id="@+id/form"
-                style="@style/form_Single.con"
+                android:id="@+id/form2"
+                style="@style/form_Multi.con"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -188,6 +189,94 @@
                         android:id="@+id/FamHist_rel_OtherRemarks"
                         style="@style/Input.maxwidth_field"
                         android:hint="Specify Relationship"
+                        android:inputType="text"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--Past Medical-->
+            <LinearLayout
+                android:id="@+id/form3"
+                style="@style/form_Single.con"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/Header.Center_text"
+                    android:text="Past Medical" />
+
+                <LinearLayout
+                    style="@style/item_Vertical.con">
+
+                    <CheckBox
+                        android:id="@+id/PastMed_Hypertension"
+                        style="@style/radio_button.field"
+                        android:text="Hypertension">
+                    </CheckBox>
+
+                    <CheckBox
+                        android:id="@+id/PastMed_Asthma"
+                        style="@style/radio_button.field"
+                        android:text="Cardiovascular Disease"/>
+
+                    <CheckBox
+                        android:id="@+id/PastMed_DiabetesMellitus"
+                        style="@style/radio_button.field"
+                        android:text="Diabetes Mellitus"/>
+
+                    <CheckBox
+                        android:id="@+id/PastMed_Tuberulosis"
+                        style="@style/radio_button.field"
+                        android:text="Tuberulosis"/>
+
+                    <CheckBox
+                        android:id="@+id/PastMed_Allergy"
+                        style="@style/radio_button.field"
+                        android:text="Allergy"/>
+                    <EditText
+                        android:id="@+id/PastMed_Spec_Allergy"
+                        style="@style/Input.maxwidth_field"
+                        android:hint="Pls. Specify"
+                        android:inputType="text"/>
+
+                    <CheckBox
+                        android:id="@+id/PastMed_SurgicalOperations"
+                        style="@style/radio_button.field"
+                        android:text="Surgical Operations"/>
+                    <EditText
+                        android:id="@+id/PastMed_Spec_SurgicalOperations"
+                        style="@style/Input.maxwidth_field"
+                        android:hint="Pls. Specify"
+                        android:inputType="text"/>
+                    <CheckBox
+                        android:id="@+id/PastMed_Yellowishdiscolorationofskinsclera"
+                        style="@style/radio_button.field"
+                        android:text="Yellowish discoloration of skin/sclera"/>
+                    <EditText
+                        android:id="@+id/PastMed_Spec_Yellowishdiscolorationofskinsclera"
+                        style="@style/Input.maxwidth_field"
+                        android:hint="Pls. Specify"
+                        android:inputType="text"/>
+
+                    <CheckBox
+                        android:id="@+id/PastMed_Lasthospitalization"
+                        style="@style/radio_button.field"
+                        android:text="Last hospitalization"/>
+                    <EditText
+                        android:id="@+id/PastMed_Spec_Lasthospitalization"
+                        style="@style/Input.maxwidth_field"
+                        android:hint="Pls. Specify your reason"
+                        android:inputType="text"/>
+                    <CheckBox
+                        android:id="@+id/PastMed_Other"
+                        style="@style/radio_button.field"
+                        android:text="Other Remarks"/>
+                    <EditText
+                        android:id="@+id/PastMed_Spec_Other"
+                        style="@style/Input.maxwidth_field"
+                        android:hint="Pls. Specify"
                         android:inputType="text"/>
                 </LinearLayout>
 

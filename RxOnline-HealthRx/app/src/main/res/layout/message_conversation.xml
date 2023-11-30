@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sections.message.Conversation">
+
+    <!-- User List RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/messageInputLayout"
+        android:padding="16dp" />
+
+    <!-- Chat RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/messageInputLayout"
+        android:padding="16dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <!-- Message Input Layout -->
+    <LinearLayout
+        android:id="@+id/messageInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Type a message" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+    </LinearLayout>
+
+</RelativeLayout>

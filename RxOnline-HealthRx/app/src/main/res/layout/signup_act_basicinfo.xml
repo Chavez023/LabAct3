@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Body"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -71,18 +72,18 @@
             android:text="5" />
     </LinearLayout>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/Main"
         style="@style/rel.Mid_part"
-        android:layout_above="@id/bottom_navigation"
-        android:layout_below="@+id/status">
+        android:layout_below="@+id/status"
+        tools:ignore="ExtraText">
 
         <LinearLayout
             android:id="@+id/holder"
             style="@style/sv.holder_Vertical.con">
 
             <LinearLayout
-                android:id="@+id/form1"
+                android:id="@+id/form"
                 style="@style/form_Single.con">
 
                 <TextView
@@ -91,11 +92,9 @@
 
                 <TextView
                     style="@style/Description.Center_text"
-                    android:text="Fill-up the corresponding items" />
+                    android:text="Fillup the form properly" />
 
-
-                <LinearLayout
-                    style="@style/item_Vertical.con">
+                <LinearLayout style="@style/item_Vertical.con">
 
                     <TextView
                         style="@style/label_text"
@@ -106,6 +105,7 @@
                         style="@style/Input.maxwidth_field"
                         android:hint="Last Name (ex. Dela Cruz)"
                         android:inputType="text" />
+
                     <EditText
                         android:id="@+id/FirstName"
                         style="@style/Input.maxwidth_field"
@@ -120,8 +120,7 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    style="@style/item_Vertical.con">
+                <LinearLayout style="@style/item_Vertical.con">
 
                     <TextView
                         style="@style/label_text"
@@ -130,8 +129,71 @@
                     <EditText
                         android:id="@+id/Birthdate"
                         style="@style/Input.maxwidth_field"
-                        android:hint="MM/DD/YY (ex. 10/18/23)"
+                        android:hint="MM/DD/YY (ex. November 18, 2023)"
                         android:inputType="date" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/item_Vertical.con">
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Gender" />
+
+                    <RadioGroup
+                        android:id="@+id/groupchoices_gender"
+                        style="@style/radio_group_Vertical.con">
+
+                        <RadioButton
+                            android:id="@+id/Female"
+                            style="@style/radio_button.field"
+                            android:text="Female" />
+
+                        <RadioButton
+                            android:id="@+id/Male"
+                            style="@style/radio_button.field"
+                            android:text="Male" />
+                    </RadioGroup>
+                    <TextView
+                        android:id="@+id/genderErrorTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF0000"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/item_Vertical.con">
+
+                    <TextView
+                        style="@style/label_text"
+                        android:text="Role" />
+
+                    <RadioGroup
+                        android:id="@+id/groupchoices_role"
+                        style="@style/radio_group_Vertical.con">
+
+                        <RadioButton
+                            android:id="@+id/Student"
+                            style="@style/radio_button.field"
+                            android:text="Student" />
+
+                        <RadioButton
+                            android:id="@+id/Teacher"
+                            style="@style/radio_button.field"
+                            android:text="Teacher" />
+
+                        <RadioButton
+                            android:id="@+id/Staff"
+                            style="@style/radio_button.field"
+                            android:text="Staff" />
+                        <TextView
+                            android:id="@+id/roleErrorTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FF0000"
+                            android:visibility="gone" />
+                    </RadioGroup>
 
                 </LinearLayout>
 
@@ -139,7 +201,7 @@
 
         </LinearLayout>`
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
         android:id="@+id/bottom_navigation"

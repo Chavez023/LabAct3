@@ -11,8 +11,8 @@
         style="@style/rel.Top_part">
 
         <TextView
-            android:id="@+id/textView"
-            style="@style/Header.Center_text"
+            android:id="@+id/Header_Text"
+            style="@style/Header.Left_text"
             android:text="Sign In" />
 
     </LinearLayout>
@@ -34,40 +34,40 @@
             android:layout_width="wrap_content"
             android:layout_height="4dp"
             android:layout_weight="1"
-            android:background="#BBBBBB" />
+            android:background="#720000" />
 
         <TextView
-            style="@style/step_false.text"
+            style="@style/step_true.text"
             android:text="2" />
 
         <View
             android:layout_width="wrap_content"
             android:layout_height="4dp"
             android:layout_weight="1"
-            android:background="#BBBBBB" />
+            android:background="#720000" />
 
         <TextView
-            style="@style/step_false.text"
+            style="@style/step_true.text"
             android:text="3" />
 
         <View
             android:layout_width="wrap_content"
             android:layout_height="4dp"
             android:layout_weight="1"
-            android:background="#BBBBBB" />
+            android:background="#720000" />
 
         <TextView
-            style="@style/step_false.text"
+            style="@style/step_true.text"
             android:text="4" />
 
         <View
             android:layout_width="wrap_content"
             android:layout_height="4dp"
             android:layout_weight="1"
-            android:background="#BBBBBB" />
+            android:background="#720000" />
 
         <TextView
-            style="@style/step_false.text"
+            style="@style/step_true.text"
             android:text="5" />
 
     </LinearLayout>
@@ -78,7 +78,10 @@
         android:layout_below="@id/status">
 
         <LinearLayout
-            style="@style/sv.holder_Vertical.con">
+            android:id="@+id/holder"
+            style="@style/sv.holder_Vertical.con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:id="@+id/form1"
@@ -86,26 +89,38 @@
 
                 <TextView
                     style="@style/Header.Center_text"
-                    android:text="Terms and Conditon" />
+                    android:text="Confirmation" />
 
                 <TextView
                     style="@style/Description.Center_text"
-                    android:text="Read and Understand" />
+                    android:text="Fill-up the corresponding items" />
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/agreementlist"
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/form2"
+                style="@style/form_Multi.con">
+
+                <TextView
+                    android:id="@+id/resultTextView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:text="Result will be displayed here"
+                    android:textSize="18sp" />
+
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/form2"
+                android:id="@+id/Form"
                 style="@style/form_Single.con">
 
-                <RadioButton
-                    android:id="@+id/confirmedAgreement"
-                    style="@style/radio_button.field"
-                    android:text="I've read and understand the Terms and condition so I'm agreed"/>
+                <Button
+                    android:id="@+id/Submit"
+                    android:layout_gravity="center"
+                    style="@style/But.norm.button"
+                    android:text="Submit"/>
+
             </LinearLayout>
 
         </LinearLayout>
@@ -133,29 +148,6 @@
 
 
         </LinearLayout>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <LinearLayout
-            android:id="@+id/Nextpage"
-            style="@style/iset_Nav_items_H">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Next" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ico_arrow_right" />
-        </LinearLayout>
-
     </LinearLayout>
 
 </RelativeLayout>

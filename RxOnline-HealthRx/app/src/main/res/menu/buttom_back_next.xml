@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/back"
-        android:title="iBack"
+        android:id="@+id/iBack"
+        android:title="Back"
         android:icon="@drawable/ico_arrow_left" />
 
     <item

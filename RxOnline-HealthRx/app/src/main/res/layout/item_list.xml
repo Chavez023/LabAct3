@@ -1,0 +1,68 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/emailTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Email: "/>
+    <TextView
+        android:id="@+id/phoneTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Phone: "/>
+    <TextView
+        android:id="@+id/idNumberTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="ID Number: "/>
+    <TextView
+        android:id="@+id/passwordTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Password: "/>
+    <TextView
+        android:id="@+id/lastNameTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Last Name: "/>
+    <TextView
+        android:id="@+id/firstNameTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="First Name: "/>
+    <TextView
+        android:id="@+id/middleNameTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Middle Name: "/>
+    <TextView
+        android:id="@+id/asthmaKeyTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Asthma Key: "/>
+    <TextView
+        android:id="@+id/cancerKeyTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Cancer Key: "/>
+    <TextView
+        android:id="@+id/cardiovascularKeyTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Cardiovascular Key: "/>
+    <TextView
+        android:id="@+id/diabetesKeyTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Diabetes Key: "/>
+    <TextView
+        android:id="@+id/hypertensionKeyTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Hypertension Key: "/>
+    <TextView
+        android:id="@+id/kidneyKeyTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Kidney Key: "/>
+    <TextView
+        android:id="@+id/allergyKeyTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Allergy Key: "/>
+    <TextView
+        android:id="@+id/remarksKeyTextView"
+        style="@style/Input.maxwidth_field"
+        android:text="Remarks Key: "/>
+</LinearLayout>

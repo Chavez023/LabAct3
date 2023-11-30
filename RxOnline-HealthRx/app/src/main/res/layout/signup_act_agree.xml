@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/Body"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
 
     <LinearLayout
         android:id="@+id/Header"
@@ -16,7 +16,6 @@
             android:text="Sign In" />
 
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/status"
@@ -35,30 +34,30 @@
             android:layout_width="wrap_content"
             android:layout_height="4dp"
             android:layout_weight="1"
-            android:background="#720000" />
+            android:background="#BBBBBB" />
 
         <TextView
-            style="@style/step_true.text"
+            style="@style/step_false.text"
             android:text="2" />
 
         <View
             android:layout_width="wrap_content"
             android:layout_height="4dp"
             android:layout_weight="1"
-            android:background="#720000" />
+            android:background="#BBBBBB" />
 
         <TextView
-            style="@style/step_true.text"
+            style="@style/step_false.text"
             android:text="3" />
 
         <View
             android:layout_width="wrap_content"
             android:layout_height="4dp"
             android:layout_weight="1"
-            android:background="#720000" />
+            android:background="#BBBBBB" />
 
         <TextView
-            style="@style/step_true.text"
+            style="@style/step_false.text"
             android:text="4" />
 
         <View
@@ -70,35 +69,47 @@
         <TextView
             style="@style/step_false.text"
             android:text="5" />
+
     </LinearLayout>
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/Main"
         style="@style/rel.Mid_part"
-        android:layout_above="@id/bottom_navigation"
-        android:layout_below="@+id/status"
-        tools:ignore="ExtraText">
+        android:layout_below="@id/status">
 
         <LinearLayout
-            android:id="@+id/holder"
             style="@style/sv.holder_Vertical.con">
 
             <LinearLayout
-                android:id="@+id/form"
-                style="@style/form_Single.con">
+                android:id="@+id/form1"
+                style="@style/form_Multi.con">
 
                 <TextView
                     style="@style/Header.Center_text"
-                    android:text="User Background" />
+                    android:text="Terms and Conditon" />
 
                 <TextView
                     style="@style/Description.Center_text"
-                    android:text="Fill-up the corresponding items" />
+                    android:text="Read and Understand" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/agreementlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
             </LinearLayout>
 
-        </LinearLayout>`
+            <LinearLayout
+                android:id="@+id/form2"
+                style="@style/form_Single.con">
 
-    </ScrollView>
+                <RadioButton
+                    android:id="@+id/confirmedAgreement"
+                    style="@style/radio_button.field"
+                    android:text="I've read and understand the Terms and condition so I'm agreed"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
         android:id="@+id/bottom_navigation"

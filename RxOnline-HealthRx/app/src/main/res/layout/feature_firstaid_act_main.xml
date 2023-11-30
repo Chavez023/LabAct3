@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".features.firstaid.ActMain">
+
+    <LinearLayout
+        android:id="@+id/Header"
+        style="@style/rel.Top_part">
+
+        <TextView
+            style="@style/Header.Center_text"
+            android:text="First Aid" />
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/Main"
+        style="@style/rel.Mid_part">
+
+        <LinearLayout
+            style="@style/sv.holder_Vertical.con">
+
+            <LinearLayout
+                android:id="@+id/Form1"
+                style="@style/form_Multi.con">
+
+                <TextView
+                    style="@style/Header.Center_text"
+                    android:text="Self Check" />
+
+                <TextView
+                    style="@style/Description.Center_text"
+                    android:text="Fill-up the corresponding items that applies to you." />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ItemsCon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Form2"
+                style="@style/form_Single.con">
+
+                <Button
+                    android:id="@+id/Submit"
+                    style="@style/But.norm.button"
+                    android:layout_gravity="center"
+                    android:text="Self Check" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        style="@style/rel.Bot.Nav_part">
+
+        <LinearLayout
+            android:id="@+id/Backpage"
+            style="@style/iset_Nav_items_H">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ico_arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Back" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

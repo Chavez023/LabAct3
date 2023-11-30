@@ -1,5 +1,6 @@
 package com.example.infirmary.sections
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -8,6 +9,7 @@ import com.example.infirmary.Fragments.NotificationsFragment
 import com.example.infirmary.Fragments.RequestsFragment
 import com.example.infirmary.R
 import com.example.infirmary.databinding.ActivityMainSecBinding
+import com.example.infirmary.sections.message.Frag_Messages
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -33,7 +35,7 @@ class MainSec : AppCompatActivity() {
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.iMess -> {
-                    loadFragment(MessagesFragment())
+                    loadFragment(Frag_Messages())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.iReq -> {
@@ -51,10 +53,9 @@ class MainSec : AppCompatActivity() {
 
         // Set up floating action button click listener
         fab.setOnClickListener {
-            // Handle FAB click
-            // Add your custom action here
         }
     }
+
 
     private fun loadFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()

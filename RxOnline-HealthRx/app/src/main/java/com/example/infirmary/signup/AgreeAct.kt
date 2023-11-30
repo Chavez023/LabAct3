@@ -1,4 +1,4 @@
-package com.example.signup
+package com.example.infirmary.signup
 
 
 import android.content.Intent
@@ -11,18 +11,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.infirmary.R
-import com.example.infirmary.databinding.SignupAgreementBinding
+import com.example.infirmary.databinding.SignupActAgreeBinding
 
-class Agreement : AppCompatActivity() {
+class AgreeAct : AppCompatActivity() {
 
-    private lateinit var binding: SignupAgreementBinding
+    private lateinit var binding: SignupActAgreeBinding
     private lateinit var confirmedAgreementRadioButton: RadioButton
     private lateinit var nextButton: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = SignupAgreementBinding.inflate(layoutInflater)
+        binding = SignupActAgreeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val recyclerView: RecyclerView = binding.agreementlist
@@ -53,7 +53,7 @@ class Agreement : AppCompatActivity() {
 
         nextButton.setOnClickListener {
             if (confirmedAgreementRadioButton.isChecked) {
-                val intent = Intent(this, LoginInfo::class.java)
+                val intent = Intent(this, LoginInfoAct::class.java)
                 startActivity(intent)
             } else {
                 Toast.makeText(this, "Agree to the Terms and Conditions is required", Toast.LENGTH_SHORT).show()

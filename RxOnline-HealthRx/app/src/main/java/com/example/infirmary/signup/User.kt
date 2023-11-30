@@ -1,0 +1,31 @@
+package com.example.infirmary.signup
+
+data class User(
+    val email: String?,
+    val phone: String?,
+    val idNumber: String?,
+    val password: String?,
+    val lastname: String?,
+    val firstname: String?,
+    val middlename: String?,
+    val birthdate: String?,
+    val gender: String?,
+    val role: String?,
+    val fhAsthma: String?,
+    val fhCancer: String?,
+    val fhCardiovascular: String?,
+    val fhDiabetes: String?,
+    val fhHypertension: String?,
+    val fhKidney: String?,
+    val fhAllergy: String?,
+    val fhRemarks: String?,
+    val pmSpecAllergy: String?,
+    val pmSpecSurgicalOperations: String?,
+    val pmSpecYellowishDiscoloration: String?,
+    val pmSpecLastHospitalization: String?,
+    val pmSpecOther: String?,
+    val checkBoxPmHypertension: Boolean,
+    val checkBoxPmAsthma: Boolean,
+    val checkBoxPmDiabetes: Boolean,
+    val checkBoxPmTuberculosis: Boolean
+)

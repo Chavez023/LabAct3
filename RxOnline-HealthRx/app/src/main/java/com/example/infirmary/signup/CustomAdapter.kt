@@ -1,4 +1,4 @@
-package com.example.signup
+package com.example.infirmary.signup
 
 import android.content.Context
 import android.view.LayoutInflater

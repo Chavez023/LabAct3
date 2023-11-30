@@ -1,4 +1,4 @@
-package com.example.signup
+package com.example.infirmary.signup
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.example.infirmary.R
 
-class LoginInfo : AppCompatActivity() {
+class LoginInfoAct : AppCompatActivity() {
 
     private lateinit var emailEditText: EditText
     private lateinit var phoneEditText: EditText
@@ -18,7 +18,7 @@ class LoginInfo : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.signup_logininfo)
+        setContentView(R.layout.signup_act_logininfo)
 
         emailEditText = findViewById(R.id.Email)
         phoneEditText = findViewById(R.id.Phone)
@@ -30,14 +30,16 @@ class LoginInfo : AppCompatActivity() {
         val backButton: View = findViewById(R.id.Backpage)
 
         backButton.setOnClickListener {
-            finish() // Finish the activity to go back
+            finish()
         }
+
         nextButton.setOnClickListener {
-            val email = emailEditText.text.toString()
+            val email = emailEditText.text.toString().trim()
             val phone = phoneEditText.text.toString()
-            val idNumber = idNumberEditText.text.toString()
+            val idNumber = idNumberEditText.text.toString().trim()
             val password = passwordEditText.text.toString()
             val confirmPassword = confirmPasswordEditText.text.toString()
+
 
             if (phone.isBlank() && email.isBlank()) {
                 phoneEditText.error = "Phone or Email is required"
@@ -59,11 +61,12 @@ class LoginInfo : AppCompatActivity() {
             }
 
             if (password == confirmPassword) {
-                val intent = Intent(this, BasicInfo::class.java)
-                intent.putExtra("emailLogininfo", email)
-                intent.putExtra("phoneLogininfo", phone)
-                intent.putExtra("idnumberLogininfo", idNumber)
-                intent.putExtra("passLogininfo", password)
+                val intent = Intent(this, BasicInfoAct::class.java)
+                intent.putExtra("email", email)
+                intent.putExtra("phone", phone)
+                intent.putExtra("idnumber", idNumber)
+                intent.putExtra("password", password)
+
                 startActivity(intent)
             } else {
                 confirmPasswordEditText.error = "Passwords do not match"
